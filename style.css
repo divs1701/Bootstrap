@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Sidebar */
+aside {
+    height: 100vh;
+    border-right: 1px solid #000000;
+    background-color: #363740
+}
+aside a.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #ffffff;
+    color: #000000 !important;
+    border-radius: 5px;
+}
+
+/* Top Bar */
+.d-flex.align-items-center span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-light {
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+.task-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.task-date {
+    font-size: 14px;
+    color: #888;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.d-flex.align-items-center label {
+    margin-left: px; /* Adds space between radio button and text */
+    cursor: pointer;
+}
+.d-flex.align-items-center {
+    gap: 10px; /* Adds space between radio and text */
+}
+
+
+.badge {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.urgent {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.new {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.default {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+
+/* Card Styles */
+
+.card h5 {
+    font-weight: 600;
+}
+
+.fs-3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+/* Unresolved Tickets & Tasks */
+.list-unstyled li {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.custom-radio{
+    margin-right: 16px;
+}
+
+.list-unstyled li:hover {
+    background-color: #f1f1f1;
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50px;  /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff; /* Outer white border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Light shadow */
+}
+
+
+
+/* Badges */
+.badge {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+.bg-secondary {
+    background-color: #6c757d !important;
+}
+.bg-warning {
+    background-color: #FEC400 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    aside {
+        height: auto;
+    }
+    .nav-link {
+        text-align: center;
+    }
+    .d-flex.align-items-center {
+        flex-direction: column;
+        text-align: center;
+    }
+}
