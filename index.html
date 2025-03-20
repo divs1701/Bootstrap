@@ -103,7 +103,7 @@
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <h2 class="h4 mb-0">Overview</h2>
                     <div class="profile-section d-flex align-items-center gap-2">
-                        <img src="assets/profile.jpg" alt="profile picture" class="profile-pic" width="40" height="40">
+                        <img src="assets/profile.jpg" alt="profile picture" class="profile-pic" width="44" height="44">
                         <span class="fw-bold">Jones Ferdinand</span>
                         <svg width="58" height="19" viewBox="0 0 58 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M48 19C49.1037 19 49.9991 18.1047 49.9991 17H46.0009C46.0009 18.1047 46.8962 19 48 19ZM54.7309 14.3216C54.1272 13.6728 52.9975 12.6969 52.9975 9.5C52.9975 7.07188 51.295 5.12812 48.9994 4.65125V4C48.9994 3.44781 48.5519 3 48 3C47.4481 3 47.0006 3.44781 47.0006 4V4.65125C44.705 5.12812 43.0025 7.07188 43.0025 9.5C43.0025 12.6969 41.8728 13.6728 41.2691 14.3216C41.0816 14.5231 40.9984 14.7641 41 15C41.0034 15.5125 41.4056 16 42.0031 16H53.9969C54.5944 16 54.9969 15.5125 55 15C55.0016 14.7641 54.9184 14.5228 54.7309 14.3216Z" fill="#C5C7CD"/>
@@ -337,24 +337,29 @@
                     </div>
                     <div class="col-md-6 mb-4">
                         <div class="card p-4 task-card">
-                            <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
                                 <div>
                                     <h5 class="task-title mb-2">Tasks</h5>
                                     <p class="smaller-heading">Today </p>
-                                    <p class="smaller-heading">create new task </p>
-                                    
-                                    
                                 </div>
-                                
-
                                 <a href="#" class="text-primary">View all</a>
                             </div>
                             
+                            <div class="create-task">
+                                <span>Create new task</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" rx="8" fill="#F0F1F7"/>
+                                    <path d="M12 7V17" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M17 12L7 12" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <hr class="custom-hr">
+
                             <ul class="list-unstyled">
                                 <li class="d-flex justify-content-between align-items-center task-item">
                                     <div class="d-flex align-items-center gap-2">
                                         <input type="radio" id="task1" name="tasks" class="custom-radio">
-                                        <label for="task1">Finish ticket update</label>
+                                        <label for="task2">Finish ticket update</label>
                                     </div>
                                     
                                     <span class="badge bg-warning">URGENT</span>
@@ -363,7 +368,7 @@
                                 <li class="d-flex justify-content-between align-items-center task-item">
                                     <div class="d-flex align-items-center gap-2">
                                         <input type="radio" id="task2" name="tasks" class="custom-radio">
-                                        <label for="task2">Create new ticket example</label>
+                                        <label for="task3">Create new ticket example</label>
                                     </div>
                                     <span class="badge bg-success">NEW</span>
                                 </li>
@@ -371,7 +376,7 @@
                                 <li class="d-flex justify-content-between align-items-center task-item">
                                     <div class="d-flex align-items-center gap-2">
                                         <input type="radio" id="task3" name="tasks" class="custom-radio" checked>
-                                        <label for="task3">Update ticket report</label>
+                                        <label for="task4">Update ticket report</label>
                                     </div>
                                     <span class="badge bg-secondary">DEFAULT</span>
                                 </li>

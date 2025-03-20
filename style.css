@@ -6,7 +6,7 @@ body {
 
 /* Sidebar */
 aside {
-    height: 200vh;
+    height: 205vh;
     border-right: 1px solid #000000;
     background-color: #363740;
     color: rgb(255, 255, 255);
@@ -31,30 +31,9 @@ aside a.nav-link {
     font-weight: bold;
     padding: 10px 15px;
 }
-.task-card {
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
-    min-height: 360px;
-    
-}
-
 .task-title {
     font-weight: 600;
     font-size: 18px;
-}
-
-.task-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    border-bottom: 0px solid #eee;
-}
-
-.task-item:last-child {
-    border-bottom: none;
 }
 
 .badge {
@@ -110,7 +89,6 @@ aside a.nav-link {
     left: -24px;
 }
 
-
 .smaller-heading {
     font-size: 10px;
     color: #9FA2B4;
@@ -146,7 +124,8 @@ aside a.nav-link {
     flex-direction: row-reverse;
     padding: 10px;
     border-radius: 8px;
-    width: 200px; 
+    gap: 8px;
+    white-space: nowrap;
 }
 
 .profile-pic {
@@ -185,6 +164,14 @@ aside a.nav-link {
 .bg-warning {
     background-color: #FEC400 !important;
 }
+.create-task {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    color: #9FA2B4; 
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
