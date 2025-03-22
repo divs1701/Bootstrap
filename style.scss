@@ -61,6 +61,13 @@ aside.col-md-2.p-4 {
     margin: 0 16px;
 }
 
+.col-md-3.mb-3 {
+    .mb-2 {
+        color: #9FA2B4;
+        transition: color 0.3s ease;
+    }
+}
+
 @mixin hover-effect {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(91, 134, 228, 0.479);
@@ -75,7 +82,19 @@ aside.col-md-2.p-4 {
     border-radius: 5px;
 
     &:hover {
-        @include hover-effect;
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(91, 134, 228, 0.479);
+        background-color: #e9ecef;
+        cursor: pointer;
+        border: 2px solid #3751FF;
+
+        .mb-2 {
+            color: #3751FF;
+        }
+
+        .fs-3 {
+            color: #3751FF;
+        }
     }
 }
 
